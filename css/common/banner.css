@@ -1,0 +1,12 @@
+div.banner{
+    background-image: url("../../pic/banner_1.jpg");
+    width:1200px;
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    height: 580px;
+    margin: 50px auto 0;
+    border: 1 px solid red;  
+}
+
+

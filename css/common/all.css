@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+  }
+
+  /* 大標題 
+
+  text-align: center;
+  color: #342110;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  */
+
+  /*大標題-淺咖啡旗幟款
+
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 700;
+    margin: 0 auto;
+    background-image: url("../pic/block_light.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 0px;
+    
+  */
+
+  /*大標題-咖啡方格款 
+
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 700;
+  margin: 0 auto;
+  background-image: url("../pic/block.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90%;
+  padding: 20px 30px;
+
+  */
+
+  /*副標題
+
+
+
+
+
+  */
+
+
+  /*內文
+
+    font-size: 0.875rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #342110;
+    line-height: 24px;
+
+  */
+
+  
