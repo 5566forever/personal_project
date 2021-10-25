@@ -1,0 +1,123 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/banner.css";
+@import "./common/aside.css";
+
+
+/*表單開始*/
+/* div.form{
+  border: 1px solid purple;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+form.the_form{
+    border: 1px solid purple;
+}
+
+div.item_form_block{
+    font-size: 0;
+    margin-bottom: 20px;
+    display: block;
+    border: 1px solid purple;
+}
+
+div.item_form_block > label{
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 0.875rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #342110;
+    line-height: 24px;
+    
+} 
+
+div.item_form_block > input{
+    width: 590px;
+    height: 40px;
+    font-size: 0.875rem;
+    padding: 0 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: calc(100% - 120px);
+    vertical-align: top;
+} 
+  
+div.item_block textarea.notes{
+    width: calc(100% - 120px);
+    vertical-align: top;
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    resize:vertical;
+}
+
+
+button.btn_submit{
+    font-size: 0.875rem;
+    background-image: url("../pic/block.svg");
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 6px 20px;
+}  */
+
+/*表單結束*/
+
+
+/*內容開始*/
+main.main{
+    border: 1px solid purple;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+div.flex_2 div.item_2_group{
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 100px;
+    border: 1px solid red;
+}
+
+div.item_2_group img{
+    width: 590px;
+    height: 390px;
+    object-fit: cover;
+    border: 1px solid blue;
+}
+
+div.item_2_group p{
+    width: 390px;
+    font-size: 0.875rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #342110;
+    line-height: 24px;
+    margin-left: 40px;
+    border: 1px solid orange;
+} 
+
+
+a.social_media_icon img{
+  width: 36px;
+  height: 36px;
+  /* border: 1px solid orange; */
+
+}
+
+
+
+div.flex_2_left img.pattern{
+  display: inline-block;
+  position: relative;
+  left: 138px;
+}

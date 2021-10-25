@@ -11,6 +11,9 @@ header.header::after{
     clear: both;
 }
 
+
+/*logo*/
+
 header.header a.logo_img{
     display: inline-block;
     vertical-align: middle;
@@ -24,13 +27,36 @@ header.header a.logo_img img{
     /* border: 1px solid green; */
 }
 
+
+/*搜尋icon*/
+
 header.header a.icon_search{
     display: block;
+    width: 25px;
+    height: 25px;
     margin-top: 30px;
     transform: translateY(-50%);
     /* border: 1px solid green; */
     float: right;
+    background-image: url("../../pic/icon_search.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
 } 
+
+header.header a.icon_search:hover{
+    background-image: url("../../pic/icon_search_hover.svg");
+    display: block;
+    margin-top: 30px;
+    transform: translateY(-50%);
+    float: right;
+    width: 30px;
+    height: 25px;
+    background-position: center center;
+
+}
+
+
+/*nav 選單列*/
 
 header.header nav.nav{
     display: inline-block;
@@ -63,80 +89,89 @@ header.header nav.nav ul.link_list > li > a{
 
 header.header nav.nav ul.link_list > li > a.-on{
     background-image: url("../../pic/block_red.svg");
-    background-repeat: none;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 96px;
     color: white;
+    background-position: center center;
 }
 
 header.header nav.nav ul.link_list > li > a:hover{
-    background-image: url("../../pic/block_red.svg");
-    background-repeat: no-repeat;
+    color: #A51623;
+    font-weight: 700;
+    min-width: 105px;
+    /* border: 1px solid green;   */
+}
+
+header.header nav.nav ul.link_list > li > a.-on:hover{
     color: white;
-    /* border: 1px solid green; */
-    background-position: center center;
+    font-weight: 400;
+    min-width: 100px;
+    /* border: 1px solid green; */  
 }
 
 header.header nav.nav ul.link_list > li:first-child > a:hover{
     background-size: 96px;
 }
   
-/* header.header nav.nav ul.link_list > li div.social_block{
-    font-size: 0.875rem;
-    position: relative;
-    padding: 13px 0;
-    box-sizing: border-box;
+
+
+/*次選單 副標 nav*/
+
+nav.sub_nav{
+    /* border: 1px solid blue; */
+    width: 800px;
+    margin: 40px auto 100px;
+    vertical-align: middle;
+    align-content: center;
+    display: inline-flexbox;
+}
+
+nav.sub_nav ul.sub_link_list{
+    list-style: none;
+    /* border: 1px solid yellow; */
+    display: inline-block;
+    /* margin: 40px 500px 100px 100px; */
+    padding-left: 0px; 
+    /* min-width: 500px; */
+    margin-left: calc(100% - 409px);
+    transform: translateX(-50%);
+
+}
+
+nav.sub_nav ul.sub_link_list > li{
+    display: inline-block;
+    /* border: 1px solid red; */
+    
+}
+
+nav.sub_nav ul.sub_link_list > li > a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0px 5px;
     min-width: 100px;
     text-align: center;
+    color: #342110;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid orange; */
+    border-right: 3px solid #A58F83;
 }
 
-header.header nav.nav ul.link_list > li div.social_block:hover ul.social_list{
-    display: block;
+nav.sub_nav ul.sub_link_list > li > a:hover{
+    color: #A58F83;
+    font-weight: 700;
 }
 
+nav.sub_nav ul.sub_link_list > li:last-child > a{
+    border-right: 0px;
+}
 
-header.header nav.nav ul.link_list > li div.social_block ul.social_list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    right: 0;
-    top: 48px;
-    background-color: white;
-    min-width: 100%;
-    display: none;
-    border: 1px solid black;
-} */
-
-  /* header.header nav.nav ul.link_list > li div.social_block ul.social_list > li{
-  
-  } 
-  
-header.header nav.nav ul.link_list > li div.social_block ul.social_list > li a{
-    font-size: 1rem;
-    text-decoration: none;
-    display: inline-block;
-    width: 100%;
-    padding: 10px 0;
-  
-    position: relative;
-}
-header.header nav.nav ul.link_list > li div.social_block ul.social_list > li a::after{
-    content: "";
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    height: 1px;
-    background-color: red;
-}
-header.header nav.nav ul.link_list > li div.social_block ul.social_list > li:last-child a::after{
-    height: 0;
-}
-header.header nav.nav ul.link_list > li div.social_block ul.social_list > li a:hover{
-    background-color: black;
-    color: white;
+nav.sub_nav ul.sub_link_list > li > a.-on{
+    color: #A51623;
+    font-weight: 700;
 }
 
 
-
+nav.sub_nav ul.sub_link_list > li > a.-on:hover{
+    color: #A51623;
+    font-weight: 700;
+}

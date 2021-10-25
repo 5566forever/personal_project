@@ -1,0 +1,44 @@
+a.up{
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 190px;
+    background-image: url("../../pic/icon_arrow_top.png");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    opacity: 90%;
+}
+
+
+
+a.up:hover{
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 190px;
+    background-image: url("../../pic/icon_arrow_top_hover.png");
+    opacity: 100%;
+}
+
+
+a.order_beer{
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 110px;
+    background-image: url("../../pic/icon_beer.png");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    opacity: 90%;
+}
+
+a.order_beer:hover{
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 110px;
+    background-image: url("../../pic/icon_beer_hover.png");
+    opacity: 100%;
+}

@@ -2,6 +2,8 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 @import "./common/banner.css";
+@import "./common/aside.css";
+
 
 div.index_intro{
     width: 800px;
@@ -74,14 +76,13 @@ h1.title2{
     padding: 20px 0px;
 }
 
-
+/* 產品四欄方格列表*/
 div.flex_4{
-    display: inline-flex;
-    vertical-align: middle; 
+    width: 1200px;
+    display: inline-block;
+    margin: 0 calc((100% - 1200px) / 2); 
     /* border: 1px solid black; */
-    align-content: center;
-    justify-content: center;
-    margin-top: 40px;
+    font-size: 0;
     
 }
 
@@ -89,23 +90,39 @@ a.item_4{
     text-decoration: none;
     display: inline-block;   
     /* border: 1px solid red; */
-    
+    margin-left: 20px; 
+    position: relative;
+}
+
+a.item_4:first-child{
+    margin-left: 0px;
 }
 
 
-/*
 div.item_4_group{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin-top: 40px;
 }
-*/
+
+
 
 a.item_4 img{
-    display: block;
     width: 285px;
-    /* border: 1px solid red; */
+    height: 265px;
+    object-fit: cover;
+    display: inline-block;
+    position: relative;
+    /* border: 1px solid green; */
 }
 
-/*內文*/
+
+
+a.item_4:hover{
+    bottom: 10px;
+}
+
+
 a.item_4 p{
     display: block;
     /* border: 1px solid green; */
@@ -117,36 +134,56 @@ a.item_4 p{
     color: #342110;
     line-height: 24px;
     margin-top: 10px;
+    position: relative;
 }
+
+a.item_4 > p:hover{
+    color: #A51623;
+    font-weight: 700;
+}
+
 
 
 /*酒廠酒吧*/
 div.factory_bar{
-    display: block;
     /* border: 1px solid green; */
     width: 1200px;
     margin: 100px auto 0;
     
 }
 
+div.flex_2{
+    margin-top: 40px;
+    /* border: 1px solid orange; */
+    display: inline-block;
+    font-size: 0;
+}
+
 a.item_2{
     display: inline-block;
-    margin-top: 40px;
     /* border: 1px solid red; */
     position: relative;
 }
 
+a.item_2:first-child{
+    margin-right: 20px;
+}
+
+
 a.item_2 img{
-    width: calc(1200px/2 - 10px);
+    width: 590px;
     height: 390px;
     object-fit: cover;
-    z-index: 1;
     /* border: 1px solid green; */
 }
 
+a.item_2:hover{
+    bottom: 10px;
+}
+
+
 div.place_name{
     display: block;
-    z-index: 2;
     /* border: 1px solid red; */
     position: absolute;
     right: 30px;
@@ -170,6 +207,11 @@ h1.title3{
     background-size: 90%;
     padding: 20px 30px;
     /* border: 1px solid green;     */
+}
+
+
+h1.title3:hover{
+    background-image: url("../pic/block_hover.svg");
 }
 
 

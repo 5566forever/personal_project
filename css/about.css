@@ -1,0 +1,88 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/banner.css";
+@import "./common/aside.css";
+
+
+
+
+/*內文開始*/
+
+main.main{
+    margin: 0 calc((100% - 1423px) / 2);
+    font-size: 0;
+    
+}
+
+div.item_2_group{
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 100px;
+    /* border: 1px solid red; */
+}
+
+div.item_2_group img{
+    width: 710px;
+    min-height: 450px;
+}
+
+div.item_2_group p{
+    width: 390px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #342110;
+    line-height: 24px;
+    margin-left: 40px;
+} 
+
+
+h1.title2{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 700;
+    margin: 0 auto 40px;
+    background-image: url("../pic/block_light.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px 0px;
+    /* border: 1px solid black; */
+}
+
+div.text_content{
+    /* border: 1px solid black; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+div.flex_2_left{
+    position: relative;
+    /* border: 1px solid green; */
+}
+
+
+div.flex_2_right{
+    position: relative;  
+    /* border: 1px solid blue; */
+    
+
+}
+
+div.flex_2_left img.pattern{
+    display: inline-block;
+    position: relative;
+    left: 138px;
+}
+
+
+div.flex_2_right div.item_2_group{
+    position: relative;
+    left: calc(138px + 82px);
+    /* border: 1px solid yellow; */
+}
