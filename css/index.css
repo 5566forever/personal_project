@@ -5,24 +5,33 @@
 @import "./common/aside.css";
 
 
+
 div.index_intro{
-    width: 800px;
-    margin: 0 auto;
-    /* border: 1px solid black; */
-    margin-top: 100px;
-    vertical-align: middle;   
+    display: inline-block;
+    width: 1200px;
+    /* border: 1px solid brown; */
     font-size: 0; 
+    margin: 100px calc((100% - 1200px)/2) 0;
 }
+
+div.intro{
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin: 0 calc((100% - 660px)/2);
+}
+
+
 
 div.index_intro_content{
     display: inline-block;
-    width: calc(100% - 103.6px - 103.6px);
     /* border: 1px solid black; */
+    margin: 0 20px;
 }
 
 
-/* 大標題 */
-div.index_intro h1.title1{
+
+/*大標題*/
+div.index_intro_content h1.title1{
     text-align: center;
     color: #342110;
     font-family: 'Roboto', sans-serif;
@@ -33,19 +42,22 @@ div.index_intro h1.title1{
     
 }
 
+/*內文*/
 div.index_intro p.text{
     text-align: center;
     color: #342110;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.875rem
+    font-size: 0.875rem;
     
 }
 
+
 div.index_intro img{
+    display: inline-block;
     /* border: 1px solid green; */
     height: 200px;
-    display: inline-block;
 }
+
 
 div.index_intro img:first-child{
     transform: scaleX(-1);
@@ -75,6 +87,7 @@ h1.title2{
     background-position: center center;
     padding: 20px 0px;
 }
+
 
 /* 產品四欄方格列表*/
 div.flex_4{
@@ -218,14 +231,13 @@ h1.title3:hover{
 /*啤酒地圖*/
 div.beer_map{
     margin: 100px auto 0;
-}
-
-iframe.google_map{
     display: block;
-    cursor: url("http://maps.gstatic.com/mapfiles/openhand_8_8.cur"), default;
-    touch-action: pan-x, pan-y;
-    margin: 40px auto 100px;
+    width: 1200px;
+    /* border: 1px solid red; */
 }
 
+div.beer_map iframe{
+    margin-top: 40px;
+}
 
 

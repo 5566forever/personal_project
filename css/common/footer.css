@@ -1,5 +1,6 @@
 footer.footer{
-    width:100%;
+    display: inline-block;
+    min-width: 100%;
     margin: 100px auto 0;
     background-color: #342110;
     position: relative;
@@ -52,6 +53,7 @@ a.social_media_icon{
     margin-right: 8px;
     /* border: 1px solid orange; */
     opacity: 80%;
+    
 }
 
 a.social_media_icon:hover{
@@ -73,14 +75,23 @@ table tr > td:first-child{
     width: 120px;
 }
 
+table.footer_table td > a{
+    text-decoration: none;
+    color: white;
+}
 
 
 div.copy_right{ 
     background-color: #FCF8F1;
     padding: 20px; 
-    width:100%; 
+    min-width:100%; 
     bottom: 90px;
     position: relative;
+}
+
+div.copy_right a{
+    text-decoration: none;
+    color: #A58F83;
 }
 
 
@@ -98,7 +109,7 @@ div.warning{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width:100%;
+    width: 100%;
     height: 90px;
     position: fixed;
     bottom: 0px;
