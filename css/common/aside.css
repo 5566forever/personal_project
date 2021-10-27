@@ -3,7 +3,7 @@ a.up{
     position: fixed;
     right: 10px;
     bottom: 190px;
-    background-image: url("../../pic/icon_arrow_top.png");
+    background-image: url("../../pic/icon_arrow_top.svg");
     background-repeat: no-repeat;
     width: 70px;
     height: 70px;
@@ -17,7 +17,7 @@ a.up:hover{
     position: fixed;
     right: 15px;
     bottom: 190px;
-    background-image: url("../../pic/icon_arrow_top_hover.png");
+    background-image: url("../../pic/icon_arrow_top_hover.svg");
     opacity: 100%;
 }
 
