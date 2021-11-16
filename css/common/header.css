@@ -1,7 +1,13 @@
+/* ======= header區域 ======= */
+
 header.header{
-    width:1200px;
-    margin: 10px auto 0;
+    width: 100%;
+    max-width:1200px;
+    margin: 10px auto 80px;
     font-size: 0;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
     /* border: 1 px solid black; */
 }
 
@@ -11,32 +17,36 @@ header.header::after{
     clear: both;
 }
 
-
-/*logo*/
+/* === 吉姆老爹logo === */
 
 header.header a.logo_img{
-    display: inline-block;
+    /* border: 1px solid red;  */
+    display: inline-flex;
     vertical-align: middle;
-    margin-right: 20px;
-    /* border: 1px solid red; */
-    height: 60px;
+    margin-left: 0;
 }
 
 header.header a.logo_img img{
     height: 60px;
-    /* border: 1px solid green; */
 }
 
 
-/*搜尋icon*/
+@media screen and (max-width: 767.98px){
+    header.header a.logo_img{
+        margin-left: 1.0875rem;
+    }
+}
+
+
+/* ======= 放大鏡 icon ======= */
 
 header.header a.icon_search{
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     margin-top: 30px;
     transform: translateY(-50%);
-    /* border: 1px solid green; */
+    margin-right: 0;
     float: right;
     background-image: url("../../pic/icon_search.svg");
     background-repeat: no-repeat;
@@ -45,23 +55,35 @@ header.header a.icon_search{
 
 header.header a.icon_search:hover{
     background-image: url("../../pic/icon_search_hover.svg");
-    display: block;
-    margin-top: 30px;
-    transform: translateY(-50%);
-    float: right;
-    width: 30px;
-    height: 25px;
-    background-position: center center;
-
 }
 
 
-/*nav 選單列*/
 
-header.header nav.nav{
+  @media screen and (max-width: 767.98px){
+    header.header a.icon_search{
+        /* margin-right: 1.0875rem; */
+        display: none;
+    }
+    
+  } 
+
+
+
+/* ======= header 選單列 ======= */
+
+
+@media screen and (min-width: 767.98px){
+    header.header nav.nav{
     display: inline-block;
     vertical-align: middle;
-}
+    }
+  }
+  
+  @media screen and (max-width: 767.98px){
+    header.header nav.nav{
+      display: none;
+    }
+  }
 
 
 header.header nav.nav > ul.link_list{
@@ -78,11 +100,12 @@ header.header nav.nav ul.link_list > li{
 header.header nav.nav ul.link_list > li > a{
     display: inline-block;
     font-size: 0.875rem;
+    font-weight: 400;
     text-decoration: none;
     padding: 8px 16px;
     min-width: 100px;
     text-align: center;
-    color: #342110;
+    color: var(--color-d);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -96,15 +119,14 @@ header.header nav.nav ul.link_list > li > a.-on{
 }
 
 header.header nav.nav ul.link_list > li > a:hover{
-    color: #A51623;
+    color: var(--color-r);
     font-weight: 700;
-    min-width: 105px;
     /* border: 1px solid green;   */
 }
 
 header.header nav.nav ul.link_list > li > a.-on:hover{
     color: white;
-    font-weight: 400;
+    font-weight: 700;
     min-width: 100px;
     /* border: 1px solid green; */  
 }
@@ -112,37 +134,35 @@ header.header nav.nav ul.link_list > li > a.-on:hover{
 header.header nav.nav ul.link_list > li:first-child > a:hover{
     background-size: 96px;
 }
-  
 
 
-/*次選單 副標 nav*/
+
+/* ======= 次選單 副標 nav ======= */
 
 nav.sub_nav{
     /* border: 1px solid blue; */
-    width: 800px;
+    width: 100%;
     margin: 40px auto 100px;
     vertical-align: middle;
     align-content: center;
-    display: inline-flexbox;
+    transition: all 1s;
 }
 
 nav.sub_nav ul.sub_link_list{
     list-style: none;
-    /* border: 1px solid yellow; */
-    display: inline-block;
-    /* margin: 40px 500px 100px 100px; */
-    padding-left: 0px; 
-    /* min-width: 500px; */
-    margin-left: calc(100% - 409px);
-    transform: translateX(-50%);
-
-}
-
-nav.sub_nav ul.sub_link_list > li{
-    display: inline-block;
     /* border: 1px solid red; */
-    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
 }
+/* 
+nav.sub_nav ul.sub_link_list > li{
+    width: auto;
+    
+} */
 
 nav.sub_nav ul.sub_link_list > li > a{
     text-decoration: none;
@@ -150,14 +170,14 @@ nav.sub_nav ul.sub_link_list > li > a{
     padding: 0px 5px;
     min-width: 100px;
     text-align: center;
-    color: #342110;
+    color: var(--color-d);
     font-family: 'Roboto', sans-serif;
     /* border: 1px solid orange; */
-    border-right: 3px solid #A58F83;
+    border-right: 3px solid var(--color-l);
 }
 
 nav.sub_nav ul.sub_link_list > li > a:hover{
-    color: #A58F83;
+    color: var(--color-l);
     font-weight: 700;
 }
 
@@ -166,12 +186,38 @@ nav.sub_nav ul.sub_link_list > li:last-child > a{
 }
 
 nav.sub_nav ul.sub_link_list > li > a.-on{
-    color: #A51623;
+    color: var(--color-r);
     font-weight: 700;
 }
 
 
 nav.sub_nav ul.sub_link_list > li > a.-on:hover{
-    color: #A51623;
+    color: (--color-r);
+    font-weight: 700;
+}
+
+
+/* ========== 大標題-淺咖啡旗幟款  ========== */
+div.title2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 20px;
+    padding: 0px;
+    /* border: 1px solid green; */
+    max-width: 250px;
+    width: 100%;
+    background-image: url("../../pic/block_light.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+div.title2 h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
     font-weight: 700;
 }

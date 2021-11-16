@@ -7,17 +7,19 @@
 
 
 div.index_intro{
-    display: inline-block;
-    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
     /* border: 1px solid brown; */
     font-size: 0; 
-    margin: 100px calc((100% - 1200px)/2) 0;
+    margin: 100px auto;
 }
 
 div.intro{
     /* border: 1px solid blue; */
-    display: inline-block;
-    margin: 0 calc((100% - 660px)/2);
+    display: inline-flex;
 }
 
 
@@ -30,10 +32,10 @@ div.index_intro_content{
 
 
 
-/*大標題*/
+/* ========== 大標題 ========== */
 div.index_intro_content h1.title1{
     text-align: center;
-    color: #342110;
+    color: var(--color-d);
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     letter-spacing: 3px;
@@ -42,10 +44,10 @@ div.index_intro_content h1.title1{
     
 }
 
-/*內文*/
+/* ========== 內文 ========== */
 div.index_intro p.text{
     text-align: center;
-    color: #342110;
+    color: var(--color-d);
     font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
     
@@ -53,7 +55,7 @@ div.index_intro p.text{
 
 
 div.index_intro img{
-    display: inline-block;
+    display: flex;
     /* border: 1px solid green; */
     height: 200px;
 }
@@ -64,138 +66,230 @@ div.index_intro img:first-child{
 }
 
 
-/*熱門啤酒*/
-div.hot_beer{
-    display: block;
-    width: 1200px;
-    margin: 100px auto 0;
-    /* border: 1px solid red; */
-    
-}
+/* ========== 熱門啤酒 ========== */
 
-/* 大標題-淺咖啡旗幟款 */
-h1.title2{
-    display: block;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 700;
-    margin: 0 auto;
-    background-image: url("../pic/block_light.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 20px 0px;
+div.beer{
+    /* border: 1px solid pink; */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 100px;
+    transition: all .5s;
+    padding: 20px;
 }
 
 
-/* 產品四欄方格列表*/
-div.flex_4{
-    width: 1200px;
-    display: inline-block;
-    margin: 0 calc((100% - 1200px) / 2); 
-    /* border: 1px solid black; */
-    font-size: 0;
-    
-}
-
-a.item_4{
-    text-decoration: none;
-    display: inline-block;   
-    /* border: 1px solid red; */
-    margin-left: 20px; 
-    position: relative;
-}
-
-a.item_4:first-child{
-    margin-left: 0px;
-}
-
-
-div.item_4_group{
-    /* border: 1px solid blue; */
-    display: inline-block;
-    margin-top: 40px;
-}
-
-
-
-a.item_4 img{
-    width: 285px;
-    height: 265px;
-    object-fit: cover;
-    display: inline-block;
-    position: relative;
-    /* border: 1px solid green; */
-}
-
-
-
-a.item_4:hover{
-    bottom: 10px;
-}
-
-
-a.item_4 p{
-    display: block;
-    /* border: 1px solid green; */
-    font-size: 0.875rem;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin: 0 auto;
-    color: #342110;
-    line-height: 24px;
-    margin-top: 10px;
-    position: relative;
-}
-
-a.item_4 > p:hover{
-    color: #A51623;
-    font-weight: 700;
-}
-
-
-
-/*酒廠酒吧*/
-div.factory_bar{
-    /* border: 1px solid green; */
-    width: 1200px;
-    margin: 100px auto 0;
-    
-}
-
-div.flex_2{
-    margin-top: 40px;
+div.beer ul.item_list{
     /* border: 1px solid orange; */
-    display: inline-block;
-    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-wrap: wrap; 
 }
 
-a.item_2{
-    display: inline-block;
+div.beer ul.item_list > li{
     /* border: 1px solid red; */
-    position: relative;
-}
-
-a.item_2:first-child{
+    width: calc((100% - 60px) / 4);  
     margin-right: 20px;
 }
 
 
-a.item_2 img{
-    width: 590px;
-    height: 390px;
+@media screen and (max-width: 767.98px){
+    div.beer ul.item_list > li{
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+
+@media screen and (max-width: 575.98px){
+    div.beer ul.item_list > li{
+        width: 100%;
+    }
+}
+
+div.beer ul.item_list > li:nth-child(4n){
+    margin-right: 0;
+}
+
+
+
+@media screen and (max-width: 767.98px){
+    div.beer ul.item_list > li:nth-child(2n){
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 575.98px){
+    div.beer ul.item_list > li:nth-child(n){
+        margin-right: 0;
+    }
+}
+
+
+div.beer ul.item_list > li > a{
+    /* border: 1px solid green; */
+    text-decoration: none;
+    display: block; 
+
+}
+
+
+div.beer ul.item_list > li > a div.img_block{
+    font-size: 0;
+    
+}
+
+
+div.beer ul.item_list > li > a div.img_block img{
+    width: 100%;
+    max-width: 20rem;
+    height: 15rem;
+    margin: 0 auto;
+    display: block;
     object-fit: cover;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 1199.98px){
+    div.beer ul.item_list > li > a div.img_block img{
+        height: 14rem;
+    }
+}
+
+
+@media screen and (max-width: 991.98px){
+    div.beer ul.item_list > li > a div.img_block img{
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width: 767.98px){
+    div.beer ul.item_list > li > a div.img_block img{
+        height: 18rem;
+    }
+}
+
+
+
+div.beer ul.item_list > li > a span.item_text{
+    display: block;
+    /* border: 1px solid purple; */
+    font-size: 0.875rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 10px auto 0;
+    color: var(--color-d);
+    line-height: 24px;
+    margin-bottom: 10px;
+
+}
+
+div.beer ul.item_list > li > a:hover .item_text:after{
+   transform: translateX(-50%)  scaleX(1);
+}
+
+.item_list .item_text::after{ 
+    content: "";
+    display: block;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 10px;
+    left: 50%;
+    bottom: 0;
+    width: 50%;
+    transform: translateX(-50%)  scaleX(0);
+    height: 2px;
+    background-color: var(--color-l);
+    transition: transform .3s;
+}
+
+div.beer ul.item_list > li > a:hover span.item_text{
+    color: var(--color-r);
+    font-weight: 700;
+}
+
+
+div.beer ul.item_list > li > a:hover div.img_block img{
+    opacity: 80%;
+}
+
+
+
+
+/* ========== 酒廠酒吧 ========== */
+div.factory_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    /* border: 1px solid brown; */
+    font-size: 0; 
+    margin: 0 auto 100px;
+    
+}
+
+div.factory_bar div.flex_2{
+    /* border: 1px solid orange; */
+    display: flex;
+    font-size: 0;
+}
+
+@media screen and (max-width: 767.98px){
+    div.factory_bar div.flex_2{
+        flex-direction: column;
+    }
+}
+
+div.factory_bar div.flex_2 a.item_2{
+    display: inline-flex;
+    /* border: 1px solid red; */
+    position: relative;
+    background: black;
+    
+}
+
+
+div.factory_bar div.flex_2 a.item_2:first-child{
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 767.98px){
+    div.factory_bar div.flex_2 a.item_2{
+        margin: 40px 20px 0;
+    }
+} 
+
+div.factory_bar div.flex_2 a.item_2 img{
+    width: 100%;
+    max-width: 36rem;
+    height: 24rem;
+    object-fit: cover;
+    opacity: 1;
+	transition: .3s ease-in-out;
     /* border: 1px solid green; */
 }
 
-a.item_2:hover{
-    bottom: 10px;
+div.factory_bar div.flex_2 a.item_2:hover img{
+    opacity: .5;
+}
+
+@media screen and (max-width: 767.98px){
+    div.factory_bar div.flex_2 a.item_2:hover{
+        bottom: 0;
+    }
 }
 
 
-div.place_name{
+div.factory_bar div.flex_2 a.item_2:hover h1.title3{
+    background-image: url("../pic/block_hover.svg");
+}
+
+
+div.factory_bar div.flex_2 a.item_2 div.place_name{
     display: block;
     /* border: 1px solid red; */
     position: absolute;
@@ -205,15 +299,15 @@ div.place_name{
 }
 
 
-/* 大標題-咖啡方格款 */
+/* ========== 大標題-咖啡方格款 ========== */
 h1.title3{
-    display: block;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 700;
     margin: 0 auto;
+
     background-image: url("../pic/block.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -223,21 +317,36 @@ h1.title3{
 }
 
 
-h1.title3:hover{
-    background-image: url("../pic/block_hover.svg");
+
+
+
+/* ========== 啤酒地圖 ========== */
+div.beer_map{
+    margin-top: 40px;
+    margin: 0 auto 100px;
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    /* border: 1px solid red; */
+    font-size: 0;
+    /* padding-top: calc(100% * 9 / 16); */
+    padding-top: 30%;
+    position: relative;
+
 }
 
-
-/*啤酒地圖*/
-div.beer_map{
-    margin: 100px auto 0;
-    display: block;
-    width: 1200px;
-    /* border: 1px solid red; */
+@media screen and (max-width: 767.98px){
+    div.beer_map{
+        padding-top: 60%;
+    }
 }
 
 div.beer_map iframe{
-    margin-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 

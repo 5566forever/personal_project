@@ -1,28 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>吉姆老爹啤酒工場  |  關於吉姆老爹</title>
     <link rel="stylesheet" href="../css/about.css">
+    <link rel="shortcut icon" href="../pic/favicon.ico">
 </head>
 
-<header class="header">
-    <a href="../index.html" class="logo_img"><img src="../pic/logo.jpg" alt=""></a>
-    <a href="#" class="icon_search"></a>
-    <nav class="nav">
-        <ul class="link_list">
-            <li><a class="-on" href="../html/about.html">關於吉姆老爹</a></li>
-            <li><a href="../html/beer.html">啤酒介紹</a></li>
-            <li><a href="../html/factory.html">啤酒工場</a></li>
-            <li><a href="../html/map.html">啤酒地圖</a></li>
-            <li><a href="../html/contact.html">聯絡我們</a></li>
-        </ul>
-    </nav>
-</header>
-
 <body>
+    <header class="header">
+        <!-- 漢堡選單 -->
+        <button class="hamburger hamburger--elastic" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="menu_bg"></div>   
+         <!-- 漢堡選單 -->
+
+        <a href="../index.html" class="logo_img"><img src="../pic/logo.jpg" alt=""></a>
+        <a href="#" class="icon_search"></a>
+        <nav class="nav">
+            <ul class="link_list">
+                <li><a class="-on" href="./about.html">關於吉姆老爹</a></li>
+                <li><a href="./beer.html">啤酒介紹</a></li>
+                <li><a href="./factory.html">啤酒工場</a></li>
+                <li><a href="./map.html">啤酒地圖</a></li>
+                <li><a href="./contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 側邊選單 -->
+    <aside class="aside">
+        <nav class="nav">
+            <ul class="nav_list">
+                <li><a class="-on" href="./about.html">關於吉姆老爹</a></li>
+                <li><a href="./beer.html">啤酒介紹</a></li>
+                <li><a href="./factory.html">啤酒工場</a></li>
+                <li><a href="./map.html">啤酒地圖</a></li>
+                <li><a href="./contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- 次選單 -->
     <div class="sub_title">
         <nav class="sub_nav">
             <ul class="sub_link_list">
@@ -42,10 +66,13 @@
         </nav>
     </div>
 
+    <!-- content_for_index -->
     <main class="main">
         <div class="flex_2_left">                 
             <div class="item_2_group">
-                <img src="../pic/about_1.jpg" alt="" title="誰是吉姆老爹">
+                <div class="about_img">
+                    <img src="../pic/about_1.jpg" alt="" title="誰是吉姆老爹">
+                </div>
                 <div class="text_content">
                     <h1 class="title2">誰是吉姆老爹</h1>
                     <p class="text">由父子檔「吉姆」與「老爹」於2013年成立吉姆老爹啤酒工場，是台灣第一家推行精釀啤酒的觀光工廠。
@@ -57,13 +84,16 @@
                         吉姆本來是上班族，周末抽空在家自己釀啤酒。一直到參與2013年台灣自釀啤酒大賽拿到冠軍後，毅然決然與老爹一起籌備精釀啤酒廠。
                     </p>
                 </div>
+                <img class="pattern" src="../pic/tag_pattern.svg" alt="">
             </div>
-            <img class="pattern" src="../pic/tag_pattern.svg" alt="">
+           
         </div>
 
         <div class="flex_2_right">                 
             <div class="item_2_group">
-                <img src="../pic/about_2.jpg" alt="" title="啤酒故事">
+                <div class="about_img">
+                    <img src="../pic/about_2.jpg" alt="" title="啤酒故事">
+                </div>
                 <div class="text_content">
                     <h1 class="title2" id="mark_1">啤酒故事</h1>
                     <p class="text">2013年的十月底，吉姆與老爹決定將員山鄉一塊廢棄將近20年的砂石場改建成占地3000坪的精釀啤酒聖地。
@@ -80,7 +110,9 @@
 
         <div class="flex_2_left">                 
             <div class="item_2_group">
-                <img src="../pic/about_3.jpg" alt="" title="啤酒介紹">
+                <div class="about_img">
+                    <img src="../pic/about_3.jpg" alt="" title="啤酒介紹">
+                </div>
                 <div class="text_content">
                     <h1 class="title2" id="mark_2">啤酒介紹</h1>
                     <p class="text">自從2015年開幕以來，吉姆老爹啤酒工場致力於推廣會回甘的招牌美系啤酒花艾爾，也同時使用在地素材，創造屬於台灣的精釀啤酒。
@@ -92,13 +124,16 @@
                         也因如此，吉姆老爹啤酒工場是台灣精釀界最令人期待的酒廠之一。
                     </p>
                 </div>
+                <img class="pattern" src="../pic/tag_pattern.svg" alt="">
             </div>
-            <img class="pattern" src="../pic/tag_pattern.svg" alt="">
+            
         </div> 
 
         <div class="flex_2_right">                 
             <div class="item_2_group">
-                <img src="../pic/about_4.jpg" alt="" title="吉姆老爹酒吧">
+                <div class="about_img">
+                    <img src="../pic/about_4.jpg" alt="" title="吉姆老爹酒吧">
+                </div>
                 <div class="text_content">
                     <h1 class="title2" id="mark_3">吉姆老爹酒吧</h1>
                     <p class="text">為了服務更多吉姆老爹的粉絲，吉姆老爹2019年底在台北大稻埕開立第一間直營酒吧。
@@ -114,51 +149,43 @@
         </div>
     </main>
     
+    <!-- END content_for_index -->
     <footer class="footer">
-        
+
         <div class="footer_content">
-            <img src="../pic/logo_line.png" alt="">
-            <table class="footer_table">
-                <tr>
-                    <td>選單</td>
-                    <td>聯繫方式</td>
-                    <td>政策</td>
-                </tr> 
-                <tr>
-                    <td><a href="#">關於吉姆老爹</a></td>
-                    <td><a href="#">info@janddbrewing.com</a></td>
-                    <td><a href="#">服務條款</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">啤酒工場</a></td>
-                    <td><a href="#">(+886) 03-922-7199</a></td>
-                    <td><a href="#">銷售條款及細則</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">啤酒地圖</a></td>
-                    <td><a href="#">264<br>宜蘭縣員山鄉員山路二段411號</a></td>
-                    <td><a href="#">隱私權政策</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">聯絡我們</a></td>
-                    <td rowspan="2">
-                        <a href="#" class="social_media_icon">
-                            <img src="../pic/icon_facebook.svg" alt="">
-                        </a>
-                        <a href="#" class="social_media_icon">
-                            <img src="../pic/icon_instagram.svg" alt="">
-                        </a>
-                        <a href="#" class="social_media_icon"> 
-                            <img src="../pic/icon_uptappd.svg" alt="">
-                        </a>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <div class="footer-nav_img">
+                <img src="../pic/logo_line.png" alt="">
+            </div>
+            
+            <div class="footer-nav"> 
+                <ul class="footer-nav_item">
+                    <li class="footer-nav_title">選單</li>
+                    <li><a href="#">關於吉姆老爹</a></li>
+                    <li><a href="#">啤酒工場</a></li>
+                    <li><a href="#">啤酒地圖</a></li>
+                    <li><a href="#">聯絡我們</a></li>   
+                </ul>
+        
+                <ul class="footer-nav_item">
+                    <li class="footer-nav_title">聯繫方式</li>
+                    <li><a href="mailto:info@janddbrewing.com">info@janddbrewing.com</a></li>
+                    <li><a href="tel:+886 039227199">(+886) 03-922-7199</a></li>
+                    <li><a href="#">264<br>宜蘭縣員山鄉員山路二段411號</a></li>
+                    <li class="footer-nav_social">
+                        <a href="#"><img src="./pic/icon_facebook.svg" alt=""></a>
+                        <a href="#"><img src="./pic/icon_instagram.svg" alt=""></a>
+                        <a href="#"><img src="./pic/icon_uptappd.svg" alt=""></a>
+                    </li>
+                </ul>   
+            
+                <ul class="footer-nav_item">
+                    <li class="footer-nav_title">政策</li>
+                    <li ><a href="#">服務條款</a></li>
+                    <li><a href="#">銷售條款及細則</a></li>
+                    <li><a href="#">隱私權政策</a></li>
+                </ul>
+            </div>
+
         </div>
 
         <div class="copy_right">
@@ -169,20 +196,35 @@
              | <a href="https://www.newsmarket.com.tw/shop/brand/%e5%90%89%e5%a7%86%e8%80%81%e7%88%b9/" target="_blank">上下游</a>
              | <a href="https://toolbeer.dk/pages/tool-city" target="_blank">TOØL</a>。<br>
             若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/" target="_blank"> [緯育TibaMe]</a>，後續會由專人協助處理。</p>
-        </div>
+        </div> 
 
         <div class="warning">
             <P>禁止酒駕</P>
-            <img src="../pic/warning.png" alt="">
+            <div class="img_warning">
+                <img src="../pic/warning.png" alt="">
+            </div>
             <P>未滿18歲請勿飲酒</P>
-        </div>
+        
+            <div class="icon">
+                <a href="#" class="up">
+                    <ul class="icon_tag">
+                        <li><img src="../pic/tag_up.svg" alt="回到最上方"></li>
+                    </ul>
+                </a>
+                <a href="#" class="order_beer">
+                    <ul class="icon_tag">
+                        <li><img src="../pic/tag_order_beer.svg" alt="瓶裝詢價單"></li>
+                    </ul>
+                </a>
+            </div>
+
+        </div> 
+
 
     </footer>
 
-    <aside>
-        <a href="#" class="up"></a>
-        <a href="#" class="order_beer"></a>
-    </aside>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/all.js"></script>
 
 </body>
 </html>
