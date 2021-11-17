@@ -48,7 +48,7 @@ div.container {
     width: 50%;
 }
   
-img.image{
+div.container img.image{
     display: block;
     width: calc((100% - 40px) /2 );
     height: auto;
@@ -76,16 +76,17 @@ div.container:hover div.overlay {
     opacity: 1;
 } */
   
-/* 
-div.text {
-    color: white;
-    font-size: 20px;
+
+div.container div.text {
+    color: var(--color-d);
+    font-size: 0.875rem;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  } */
+  } 
 
 
 

@@ -50,3 +50,14 @@ $(document).ready(function(){
     ]
   });
 });
+
+
+/* ========== 回到最上方 ========== */
+$(function(){
+  $("#back_to_the_top").on("click", function(e){
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+  });  
+});

@@ -92,6 +92,11 @@ div.btn button.btn_submit{
     cursor: pointer;
 }  
 
+div.btn button.btn_submit:hover{
+  background-color: var(--color-r);
+}
+
+
 
 /* ========== 內容開始 ========== */
 main.main{

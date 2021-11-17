@@ -214,6 +214,13 @@ div.icon > a.up:hover ul.icon_tag{
 }
 
 
+@media screen and (max-width: 767.98px){
+  div.icon > a.up:hover ul.icon_tag{
+    display: none;
+  }
+}
+
+
 div.icon a.order_beer{
   display: block;
   position: absolute;
@@ -250,4 +257,10 @@ div.icon a.order_beer:hover{
 
 div.icon a.order_beer:hover ul.icon_tag{
   display: block;
+}
+
+@media screen and (max-width: 767.98px){
+  div.icon a.order_beer:hover ul.icon_tag{
+    display: none;
+  }
 }
