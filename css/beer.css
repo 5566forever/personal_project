@@ -126,7 +126,7 @@ main.main ul.item_list > li > a span.item_text{
 
 }
 
-main.main ul.item_list > li > a:hover .item_text:after{
+main.main ul.item_list > li > a:hover .item_text::after{
    transform: translateX(-50%)  scaleX(1);
 }
 

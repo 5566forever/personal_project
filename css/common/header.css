@@ -3,7 +3,7 @@
 header.header{
     width: 100%;
     max-width:1200px;
-    margin: 10px auto 80px;
+    margin: 10px auto 60px;
     font-size: 0;
     transition-property: transform;
     transition-duration: 1s;
@@ -203,7 +203,7 @@ div.title2{
     justify-content: center;
     align-items: center;
 
-    margin: 0 auto 20px;
+    margin: 80px auto 40px;
     padding: 0px;
     /* border: 1px solid green; */
     max-width: 250px;

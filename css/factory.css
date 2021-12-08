@@ -34,18 +34,57 @@ div.intro p.text{
 
 
 /*圖集*/
+
+/*原本 
 div.intro_img{
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
+  border: 1px solid red;
+  display: flex;
+ 
+  max-width: 1200px;
+  width: 100%;
+  font-size: 0;
+  margin: 0 auto 100px;
+}
+
+div.left img, div.right img{
+  width: 285px;
+  width: 100%;
+  border: 1px solid green;
+}
+
+
+div.center{
+  margin: 0 20px;
+  
+}
+
+div.center img{
+  width: 580px;
+}
+
+
+div.left{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+div.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
 }
 
 div.container {
     position: relative;
-    width: 50%;
+    width: 100%;
+}
+
+div.container:first-child{
+    margin: 0 0 10px;
+    border: 1px solid orange;
 }
   
 div.container img.image{
@@ -53,44 +92,55 @@ div.container img.image{
     width: calc((100% - 40px) /2 );
     height: auto;
     border: 1px solid orange;
+} 
+
+*/
+
+div.intro_img{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
 }
 
 
+div.container{
+  font-size: 0;
+  background: black;
+} 
 
-/*   
-div.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: var(--color-d);
-} */
-
-/* 
-div.container:hover div.overlay {
-    opacity: 1;
-} */
+div.container img.image{
+  width: 100%;
   
-
-div.container div.text {
-    color: var(--color-d);
-    font-size: 0.875rem;
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  } 
+}
 
 
+div.container img.image:hover {
+  opacity: .5;
+  transform: all .5s;
 
+}
 
+/*
+div.container p{
+  color: white;
+  font-size: 0.875rem;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+} 
+
+div.container:hover div.text{
+  opacity: 1;
+} 
+*/
 
 
 
