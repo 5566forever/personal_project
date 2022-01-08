@@ -241,12 +241,12 @@ div.icon a.order_beer{
 div.icon a.order_beer ul.icon_tag{
   list-style: none;
   margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 70px;
-    top: -25px;
-    min-width: 100%;
-    display: none;
+  padding: 0;
+  position: absolute;
+  right: 70px;
+  top: -25px;
+  min-width: 100%;
+  display: none;
     /* border: 1px solid black; */
 }
 
