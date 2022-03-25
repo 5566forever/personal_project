@@ -3,7 +3,7 @@
 header.header{
     width: 100%;
     max-width:1200px;
-    margin: 10px auto 60px;
+    margin: 10px auto 40px;
     font-size: 0;
     transition-property: transform;
     transition-duration: 1s;
